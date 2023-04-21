@@ -54,14 +54,9 @@ def download_audio_from_youtube(url, target_filename):
 
 
 def display_video_stats(youtube_video):
-    st.write(f'**Title: {youtube_video.title}**')
-    logging.info(f"Video title: {youtube_video.title}")
-    logging.info(f"Video URL: {youtube_video.watch_url}")
-
-    duration_in_minutes = round(youtube_video.length / 60)
-    st.write(f'Duration: {duration_in_minutes} mins')
-    logging.info(f"Video duration: {duration_in_minutes} mins") 
-    
+    st.write(f'**Title: title**')
+    logging.info(f"Video title: title")
+    logging.info(f"Video URL: url")
     # resp = requests.get(youtube_video.thumbnail_url)
     # video_thumbnail = Image.open(BytesIO(resp.content))
     # st.image(video_thumbnail, caption=youtube_video.title, use_column_width=True)
