@@ -404,7 +404,7 @@ def load_openai_whisper_model():
 
 @st.cache_resource
 def initialize_openai_api():
-    openai.organization = st.secrets["OPENAI_ORG_ID"]
+    # openai.organization = st.secrets["OPENAI_ORG_ID"]
     # openai.api_key = os.getenv("OPENAI_API_KEY")
     openai.api_key = st.secrets["OPENAI_API_KEY"]
     logging.info('Initialized OpenAI API.')
